@@ -62,7 +62,7 @@ const EditUserForm = ({ user }) => {
     if (password) {
       await updateUser({ id: user.id, username, password, roles, active });
     } else {
-      await updateUser({ id: user.id, username, password, roles, active });
+      await updateUser({ id: user.id, username, roles, active });
     }
   };
 
